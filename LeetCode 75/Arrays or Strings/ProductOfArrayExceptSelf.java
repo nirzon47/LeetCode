@@ -25,6 +25,36 @@ public class ProductOfArrayExceptSelf {
         return res;
     }
 
+    /*
+    Both the solutions have same time and space time.
+    public int[] productExceptSelf(int[] nums) {
+        int product = 1;
+        int numZero = 0;
+        int[] res = new int[nums.length];
+        for (int num : nums) {
+            if (num != 0)
+                product *= num;
+            else
+                numZero++;
+            if (numZero > 1)
+                break;
+        }
+        for (int i = 0; i < nums.length; i++) {
+            if (numZero == 2)
+                res[i] = 0;
+            else if (numZero == 1) {
+                if (nums[i] == 0)
+                    res[i] = product;
+                else
+                    res[i] = 0;
+            } else {
+                res[i] = product / nums[i];
+            }
+        }
+
+        return res;
+    } */
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

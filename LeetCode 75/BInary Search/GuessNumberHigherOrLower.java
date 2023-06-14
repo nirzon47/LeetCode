@@ -5,7 +5,7 @@ public class GuessNumberHigherOrLower {
     }
 
     public static int guessNumber(int n) {
-        // Does Binary search until we get the guessed number, pretty self explanatory tbh
+        // Does Binary search until we get the guessed number, pretty self-explanatory tbh
         int left = 1, right = n, mid;
 
         while (left <= right) {
@@ -15,7 +15,7 @@ public class GuessNumberHigherOrLower {
             else if (guess(mid) == 1) left = mid + 1; // The guess was higher, so we up our lower bound
             else right = mid - 1; // The guess was lower, so we down the upper bound
         }
-        
+
         return -1;
     }
 

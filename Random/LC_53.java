@@ -1,6 +1,9 @@
+// https://leetcode.com/problems/maximum-subarray/
+
 public class LC_53 {
 
     public static int maxSubArray(int[] nums) {
+        // Using Kadane's algorithm
         int sum = 0, maxSum = Integer.MIN_VALUE;
 
         for (int num : nums) {

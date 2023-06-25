@@ -25,7 +25,7 @@ public class LC_1089 {
             // our limit, if it is, we put the left in that position
             if (nums[left] == 0) {
                 if (right - 1 < len) {
-                    nums[right - 1] = nums[left];
+                    nums[right - 1] = 0;
                 }
                 // Since we are done handling a zero, we decrement our count
                 numZeros--;

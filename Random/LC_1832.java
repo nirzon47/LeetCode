@@ -1,5 +1,5 @@
 public class LC_1832 {
-    public static dasdadadboolean checkIfPangram(String sentence) {
+    public static boolean checkIfPangram(String sentence) {
         int len = sentence.length();
 
         if (len < 26) {
